@@ -2,19 +2,18 @@ package main
 
 const a = "Hello, World"
 
-// Escopo Global
+type ID int
+
 var (
 	b bool    = true
 	c int     = 10
 	d string  = "Davi"
 	e float64 = 1.2
+	f ID      = 1
 )
 
-// escopo  local
 func main() {
-	a := "X" // - := feito na primeira vez que a variavel é criada
-
-	println(a)
+	println(f)
 }
 
 func x() {
